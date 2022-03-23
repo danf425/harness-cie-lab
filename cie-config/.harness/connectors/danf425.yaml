@@ -1,0 +1,23 @@
+connector:
+  name: github-danf425
+  identifier: danf425
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampcidanf
+  type: Github
+  spec:
+    url: https://github.com/danf425
+    validationRepo: jhttp_state
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: danf425
+          tokenRef: danf_pat
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: danf_pat
+    executeOnDelegate: false
+    type: Account
